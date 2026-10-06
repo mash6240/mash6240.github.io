@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hashimoto Portfolio｜Webプログラマー 橋本</title>
+  <meta name="description" content="Webプログラマー橋本のポートフォリオです。HTML/CSS/JavaScript/PHPによるコーディング、LP・コーポレートサイト制作に対応しています。">
+  <meta property="og:title" content="Hashimoto Portfolio｜Webプログラマー 橋本">
+  <meta property="og:description" content="HTML/CSS/JavaScript/PHPによるコーディング、LP・コーポレートサイト制作に対応しています。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://mash6240.github.io/img/works/clinic.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#top" class="header__logo">Hashimoto<span>.</span></a>
+      <nav class="nav" aria-label="メインメニュー">
+        <ul class="nav__list">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact" class="nav__contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero__role js-fade">Web Programmer / Coder</p>
+        <h1 class="hero__title js-fade">
+          デザインを、<br>
+          <span class="hero__accent">正確に、速く</span><br class="sp-only">Webサイトに。
+        </h1>
+        <p class="hero__lead js-fade">
+          Web制作会社で働く、在宅のWebプログラマー 橋本です。<br class="pc-only">コーディングを中心に、LP・コーポレートサイトの制作をお手伝いしています。
+        </p>
+        <div class="hero__buttons js-fade">
+          <a href="#works" class="btn btn--primary">制作実績を見る</a>
+          <a href="https://crowdworks.jp/public/employees/2841822" class="btn btn--ghost" target="_blank" rel="noopener">クラウドワークスで相談する</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="section works" id="works">
+      <div class="container">
+        <div class="section-head js-fade">
+          <h2 class="section-head__en">Works</h2>
+          <p class="section-head__ja">制作実績</p>
+        </div>
+        <p class="works__note js-fade">※掲載している作品は、ポートフォリオ用に制作した架空のサイトです。</p>
+
+        <div class="works__grid">
+          <article class="work-card js-fade">
+            <a href="https://mash6240.github.io/clinic-lp-sample/" class="work-card__thumb" target="_blank" rel="noopener">
+              <img src="img/works/clinic.jpg" alt="美容クリニックLPのファーストビュー" width="960" height="600" loading="lazy">
+            </a>
+            <div class="work-card__body">
+              <p class="work-card__cat">Landing Page</p>
+              <h3 class="work-card__title">美容クリニック LP</h3>
+              <p class="work-card__desc">上品さと信頼感を意識した美容皮膚科のLP。料金表のタブ切り替え、FAQアコーディオン、予約フォームの入力チェックを実装しました。</p>
+              <ul class="work-card__tags">
+                <li>HTML</li><li>SCSS</li><li>JavaScript</li><li>レスポンシブ</li>
+              </ul>
+              <dl class="work-card__meta">
+                <div><dt>制作期間</dt><dd>1日</dd></div>
+                <div><dt>担当</dt><dd>デザイン・コーディング</dd></div>
+              </dl>
+              <div class="work-card__links">
+                <a href="https://mash6240.github.io/clinic-lp-sample/" target="_blank" rel="noopener">サイトを見る</a>
+                <a href="https://github.com/mash6240/clinic-lp-sample" target="_blank" rel="noopener">コードを見る</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card work-card--soon js-fade">
+            <div class="work-card__thumb work-card__thumb--soon" aria-hidden="true"><span>Coming Soon</span></div>
+            <div class="work-card__body">
+              <p class="work-card__cat">Corporate Site</p>
+              <h3 class="work-card__title">リフォーム会社 コーポレートサイト</h3>
+              <p class="work-card__desc">TOP・会社概要・サービス・施工事例・お問い合わせの5ページ構成。現在制作中です。</p>
+              <ul class="work-card__tags">
+                <li>HTML</li><li>SCSS</li><li>JavaScript</li><li>複数ページ</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="work-card work-card--soon js-fade">
+            <div class="work-card__thumb work-card__thumb--soon work-card__thumb--soon2" aria-hidden="true"><span>Coming Soon</span></div>
+            <div class="work-card__body">
+              <p class="work-card__cat">Landing Page</p>
+              <h3 class="work-card__title">学習塾 生徒募集 LP</h3>
+              <p class="work-card__desc">親しみやすいポップなデザインのLP。スライダーやカウントアップなどの動きを取り入れます。現在制作中です。</p>
+              <ul class="work-card__tags">
+                <li>HTML</li><li>SCSS</li><li>JavaScript</li><li>アニメーション</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head js-fade">
+          <h2 class="section-head__en">About</h2>
+          <p class="section-head__ja">自己紹介</p>
+        </div>
+        <div class="about__grid">
+          <div class="about__text js-fade">
+            <p class="about__name">橋本 <span>Hashimoto</span></p>
+            <p>2019年にプログラミングスクールでWeb制作を学び、フリーランスとしてホームページ制作に携わったあと、2025年10月からWeb制作会社でWebプログラマーとして勤務しています。</p>
+            <p>本業とは別に、平日夜と土日祝を中心にお仕事をお受けしています（勤務先の副業許可取得済み）。</p>
+            <p>「いただいたデザインを、細かい余白や文字サイズまで正確に再現すること」「納期と連絡のこまめさ」を大切にしています。</p>
+          </div>
+          <div class="about__ai js-fade">
+            <h3 class="about__ai-title">AIツールの活用について</h3>
+            <p>作業の効率化と品質向上のため、コーディングや確認作業にAIツール（Claude）を活用しています。成果物は必ず私自身が動作確認したうえで納品します。お預かりした個人情報や機密情報をAIツールに入力することはありません。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head js-fade">
+          <h2 class="section-head__en">Skills</h2>
+          <p class="section-head__ja">対応できること</p>
+        </div>
+        <ul class="skills__list">
+          <li class="skill js-fade">
+            <h3 class="skill__name">HTML / CSS</h3>
+            <p class="skill__desc">セマンティックなマークアップ、レスポンシブ対応、Flexbox／Gridを使ったレイアウト</p>
+          </li>
+          <li class="skill js-fade">
+            <h3 class="skill__name">Sass (SCSS)</h3>
+            <p class="skill__desc">変数・mixinを使った設計、ファイル分割、BEM命名</p>
+          </li>
+          <li class="skill js-fade">
+            <h3 class="skill__name">JavaScript / jQuery</h3>
+            <p class="skill__desc">ハンバーガーメニュー、スライダー、アコーディオン、スクロールアニメーション、フォームの入力チェック</p>
+          </li>
+          <li class="skill js-fade">
+            <h3 class="skill__name">PHP</h3>
+            <p class="skill__desc">お問い合わせフォーム（メール送信）、既存サイトの機能追加・不具合修正</p>
+          </li>
+          <li class="skill js-fade">
+            <h3 class="skill__name">WordPress</h3>
+            <p class="skill__desc">既存テーマのカスタマイズ、固定ページの追加、プラグインの導入・設定</p>
+          </li>
+          <li class="skill js-fade">
+            <h3 class="skill__name">Tools</h3>
+            <p class="skill__desc">Git / GitHub、VS Code、Chrome DevTools、Claude</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section class="section service" id="service">
+      <div class="container">
+        <div class="section-head js-fade">
+          <h2 class="section-head__en">Service</h2>
+          <p class="section-head__ja">料金の目安</p>
+        </div>
+        <div class="service__grid">
+          <div class="price-card js-fade">
+            <h3 class="price-card__title">下層ページのコーディング</h3>
+            <p class="price-card__price"><span>10,000</span>円〜</p>
+            <p class="price-card__term">納期目安：2〜3日</p>
+          </div>
+          <div class="price-card price-card--main js-fade">
+            <h3 class="price-card__title">LPのコーディング</h3>
+            <p class="price-card__price"><span>30,000</span>円〜</p>
+            <p class="price-card__term">納期目安：5〜7日</p>
+          </div>
+          <div class="price-card js-fade">
+            <h3 class="price-card__title">既存サイトの修正</h3>
+            <p class="price-card__price"><span>5,000</span>円〜</p>
+            <p class="price-card__term">内容を確認してお見積り</p>
+          </div>
+        </div>
+        <p class="service__note js-fade">※金額は税抜です。ページの長さや動きの有無により変わりますので、デザインを拝見してからお見積りします。</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__box js-fade">
+          <h2 class="contact__title">お仕事のご相談はこちら</h2>
+          <p class="contact__text">ご依頼・ご相談は、クラウドワークスのメッセージからお気軽にどうぞ。<br class="pc-only">平日は18時以降、土日祝は日中も対応しており、原則24時間以内にお返事します。</p>
+          <a href="https://crowdworks.jp/public/employees/2841822" class="btn btn--white" target="_blank" rel="noopener">クラウドワークスのプロフィールを見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><small>&copy; 2026 Hashimoto</small></p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
